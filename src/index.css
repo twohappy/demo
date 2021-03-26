@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.column {
+	height: 800px;
+	position: relative;
+}
+.column-sidebar {
+	position: absolute;
+	width: 70px;
+	height: 100%;
+	background: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.column-content {
+	padding-left: 70px;
+	height: 100%;
+	background: #edeeef;
+	z-index: -1;
+}
+
+.column-content-block {
+	font-size: 90px;
+	letter-spacing: 20px;
+	color: #E3E5E6;
+}
+
+
+/*这里有个问题，我不太会把 ul 定位到固定的位置，本来应该起始位置在 20，20 */
+.nav-list {
+	text-align: center;
+	line-height: 45px;
+	list-style-type: none;
+	display: inline;
+}
+
+.nav-avatar {
+	display: block;
+	text-align: center;
+	padding-top: 500px;
+}
+
+.plus {
+	display: block;
+	padding-top: 20px;
+	padding-left: 20px;
 }
