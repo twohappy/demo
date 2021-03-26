@@ -13,7 +13,7 @@ import Search from './assets/content/search.png';
 import Tick from './assets/content/tick.png';
 import Point from './assets/content/point.png';
 
-class App extends React.Component {
+class Notebook extends React.Component {
 	render() {
 		return (
 			<div className="column">
@@ -109,6 +109,6 @@ class App extends React.Component {
 
 
 ReactDOM.render(
-	<App />,
+	<Notebook />,
 	document.getElementById('root')
 );
