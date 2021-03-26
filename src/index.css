@@ -24,22 +24,183 @@
 }
 
 
-/*这里有个问题，我不太会把 ul 定位到固定的位置，本来应该起始位置在 20，20 */
 .nav-list {
 	text-align: center;
-	line-height: 45px;
+	line-height: 70px;
 	list-style-type: none;
 	display: inline;
+	position: absolute;
+	left: -25px;
 }
 
 .nav-avatar {
 	display: block;
 	text-align: center;
-	padding-top: 500px;
+	padding-top: 720px;
 }
 
+.nav-top {
+	text-align: center;
+
+}
 .plus {
-	display: block;
-	padding-top: 20px;
-	padding-left: 20px;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	border: 0;
+	background-color: transparent;
+	outline: none;
+}
+
+.bell {
+	position: relative;
+	top: 20px;
+	left: 1040px;
+	border: 0;
+	background-color: transparent;
+	outline: none;
+}
+
+.search {
+	position: relative;
+	top: 20px;
+	left: 1000px;
+	border: 0;
+	background-color: transparent;
+	outline: none;
+}
+
+.note {
+	margin: 1px 1px;
+	position: relative;
+	top: 85px;
+	width: 1060px;
+	height: 470px;
+}
+
+.backgroundtext {
+	margin: 1px 1px;
+	font-size: 96px;
+	letter-spacing: 15px;
+	color: #E3E5E6;
+	width: 1060px;
+	position: relative;
+	left: 25px;
+	z-index: 0;
+
+}
+
+.note-text {
+	margin: 1px 1px;
+	font-size: 36px;
+	letter-spacing: 5px;
+	position: relative;
+	left: 100px;
+	top: -115px;
+
+}
+
+.note-number {
+	margin: 1px 1px;
+	font-size: 14px;
+	color: #E3E5E6;
+	position: relative;
+	right: 0px;
+	top: -145px;
+	text-align: right;
+}
+
+
+.note-list {
+	background: #ffffff;
+	width: 970px;
+	height: 60px;
+	position: relative;
+	left: 85px;
+	top: -125px;
+	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); /*阴影*/
+	border-bottom: 2px solid #EDEEEF; /*2px 的横线*/
+}
+
+.note-list-icon {
+	width: 50px;
+	height: 55px;
+	text-align: center;
+	vertical-align: middle!important;
+}
+
+.note-list-border {
+	margin: 1px 1px;
+	width: 68px
+}
+.note-list-border-red {
+	margin: 4px 4px;
+	border-radius: 8px;
+	background: #E95E51;
+	width: 53px;
+	height: 18px;
+	text-align: center;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.note-list-border-green {
+	margin: 4px 4px;
+	border-radius: 8px;
+	background: #0EBB82;
+	width: 53px;
+	height: 18px;
+	text-align: center;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.note-list-border-blue {
+	margin: 4px 4px;
+	border-radius: 8px;
+	background: #486EE3;
+	width: 53px;
+	height: 18px;
+	text-align: center;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.note-list-border-grey {
+	margin: 4px 4px;
+	border-radius: 8px;
+	background: #7F8186;
+	width: 68px;
+	height: 18px;
+	text-align: center;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+
+.note-list-text {
+	text-align: left;
+}
+.note-list-clock {
+	width: 120px;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+
+
+.note-list-time {
+	margin: 1px 1px;
+	width: 100px;
+	height: 18px;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: -0.5px;
+}
+
+.nonebutton {
+	border: 0;
+	background-color: transparent;
+	outline: none;
 }
