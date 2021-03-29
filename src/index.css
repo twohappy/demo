@@ -1,8 +1,8 @@
-
 .column {
 	height: 800px;
 	position: relative;
 }
+
 .column-sidebar {
 	position: absolute;
 	width: 70px;
@@ -23,51 +23,42 @@
 	color: #E3E5E6;
 }
 
-
-.nav-list {
-	text-align: center;
-	line-height: 70px;
+.sidebar-nav {
+	height: 800px;
+	width: 70px;
+	padding: 0px;
 	list-style-type: none;
-	display: inline;
-	position: absolute;
-	left: -25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-.nav-avatar {
-	display: block;
-	text-align: center;
-	padding-top: 720px;
+.sidebar-nav-icon {
+	margin: 25px 0;
 }
 
-.nav-top {
-	text-align: center;
-
-}
-.plus {
-	position: relative;
-	top: 20px;
-	left: 20px;
-	border: 0;
-	background-color: transparent;
-	outline: none;
+.sidebar-nav-avatar {
+	margin-top: auto;
 }
 
-.bell {
-	position: relative;
-	top: 20px;
-	left: 1040px;
-	border: 0;
-	background-color: transparent;
-	outline: none;
+.content-nav {
+	height: 50px;
+	width: 1150px;
+	margin-top: 20px;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-.search {
-	position: relative;
-	top: 20px;
-	left: 1000px;
-	border: 0;
-	background-color: transparent;
-	outline: none;
+.content-nav-plus {
+	margin-right: auto;
+	margin-left: 20px;
+}
+
+.content-nav-icon {
+	margin: 0 20px;
 }
 
 .note {
@@ -87,7 +78,6 @@
 	position: relative;
 	left: 25px;
 	z-index: 0;
-
 }
 
 .note-text {
@@ -97,7 +87,6 @@
 	position: relative;
 	left: 100px;
 	top: -115px;
-
 }
 
 .note-number {
@@ -110,29 +99,34 @@
 	text-align: right;
 }
 
-
 .note-list {
 	background: #ffffff;
 	width: 970px;
 	height: 60px;
+	margin: 0px;
+	padding: 0px;
 	position: relative;
 	left: 85px;
 	top: -125px;
 	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); /*阴影*/
 	border-bottom: 2px solid #EDEEEF; /*2px 的横线*/
+	display: flex;
+	align-items: center;
 }
 
 .note-list-icon {
 	width: 50px;
 	height: 55px;
-	text-align: center;
-	vertical-align: middle!important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .note-list-border {
 	margin: 1px 1px;
 	width: 68px
 }
+
 .note-list-border-red {
 	margin: 4px 4px;
 	border-radius: 8px;
@@ -177,30 +171,20 @@
 	color: #ffffff;
 }
 
-
 .note-list-text {
 	text-align: left;
+	margin-right: auto;
 }
+
 .note-list-clock {
+	height: 25px;
+	width: 145px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.note-list-clocktime {
 	width: 120px;
-	text-align: center;
-	vertical-align: middle;
-	white-space: nowrap;
-}
-
-
-
-.note-list-time {
-	margin: 1px 1px;
-	width: 100px;
-	height: 18px;
-	text-align: center;
-	font-size: 12px;
-	letter-spacing: -0.5px;
-}
-
-.nonebutton {
-	border: 0;
-	background-color: transparent;
-	outline: none;
+	text-align: left;
 }
