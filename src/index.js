@@ -36,56 +36,79 @@ class Notebook extends React.Component {
 						<p className="backgroundtext">TODAY</p>
 						<p className="note-text">TODAY</p>
 						<p className="note-number">6 Tasks</p>
- 						<div className="note-list">
-							<div className="note-list-icon">
-								<img src={Tick} />
-							</div>
-							<div className="note-list-border">
-								<button className="note-list-border-red">Hight</button>
-							</div>
-							<div className="note-list-text">Cook Eggs Don T Boil</div>
-							<div className="note-list-clock">
-								<img src={Clock} />
-								<div className="note-list-clocktime">Due in 30 min</div>
-							</div>
-							<div className="note-list-icon">
-								<img src={Point} />
-							</div>
-						</div>
-						<div className="note-list">
-							<div className="note-list-icon">
-								<img src={Tick} />
-							</div>
-							<div className="note-list-text">Thrill Friends And Family With A Make It Yourself Pizza Party</div>
-							<div className="note-list-clock">
-								<img src={Clock} />
-								<div className="note-list-clocktime">Due in 2 hours</div>
-							</div>
-							<div className="note-list-icon">
-								<img src={Point} />
-							</div>
-						</div>
- 						<div className="note-list">
-							<div className="note-list-icon">
-								<img src={Tick} />
-							</div>
-							<div className="note-list-border">
-								<button className="note-list-border-grey">Medium</button>
-							</div>
-							<div className="note-list-border">
-								<button className="note-list-border-blue">Cook</button>
-							</div>
-							<div className="note-list-text">Smart Food Choices 101 Tips For Busy Women</div>
-							<div className="note-list-clock">
-								<img src={Clock} />
-								<div className="note-list-clocktime">Due in 9 hours</div>
-							</div>
-							<div className="note-list-icon">
-								<img src={Point} />
-							</div>
-						</div>
+							<Item />
 					</div>
 				</div>
+			</div>
+		);
+	}
+}
+
+class Item extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			mapItem: [{
+				id: 1,
+				lable: [{
+									text: "Hight",
+									color: "red",
+								}],
+				text: "Cook Eggs Don T Boil",
+				clockactive: true,
+				clocktext: "Due in 30 min",
+			},
+			{
+				id: 2,
+				lable: [{
+									text: "Medium",
+									color: "grey"
+								},
+								{
+									text: "Cook",
+									color: "blue",
+								}],
+				text: "Smarter Food Choices 101 Tips For Busy Women",
+				clockactive: false,
+				clocktext: "Due in 9 hours",
+			}]
+		};
+	}
+
+	render() {
+		return (
+			<div>
+			{this.state.mapItem.map((item) => (
+				<div className="note-list">
+					<div className="note-list-icon">
+						<img src={Tick} />
+					</div>
+						{/* 这个地方，我又 map 了一次，感觉有点蠢，能直接把子数组里面的内容拿出来么？*/}
+						{item.lable.map((item) =>
+							<div className="note-list-border">
+								{/* 这个地方，要根据返回的 lable.color 更改 classname，后续再改 */}
+								<button className={"note-list-border-red"}>
+									<div className="note-list-text">
+										{item.text}
+									</div>
+								</button>
+							</div>
+						)}
+						<div className="note-list-text">
+							{item.text}
+						</div>						
+					<div className="note-list-clock">
+						{/* 这个地方 clock 需要判断逻辑 */}
+						<img src={Clock} />
+						<div className="note-list-clocktime">
+							{item.clocktext}
+						</div>
+					</div>
+					<div className="note-list-icon">
+						<img src={Point} />
+					</div>
+				</div>
+			))}
 			</div>
 		);
 	}
