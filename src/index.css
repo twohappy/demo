@@ -1,190 +1,190 @@
 .column {
-	height: 800px;
-	position: relative;
+  height: 800px;
+  position: relative;
 }
 
 .column-sidebar {
-	position: absolute;
-	width: 70px;
-	height: 100%;
-	background: #ffffff;
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  background: #ffffff;
 }
 
 .column-content {
-	padding-left: 70px;
-	height: 100%;
-	background: #edeeef;
-	z-index: -1;
+  padding-left: 70px;
+  height: 100%;
+  background: #edeeef;
+  z-index: -1;
 }
 
 .column-content-block {
-	font-size: 90px;
-	letter-spacing: 20px;
-	color: #E3E5E6;
+  font-size: 90px;
+  letter-spacing: 20px;
+  color: #E3E5E6;
 }
 
 .sidebar-nav {
-	height: 800px;
-	width: 70px;
-	padding: 0px;
-	list-style-type: none;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+  height: 800px;
+  width: 70px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .sidebar-nav-icon {
-	margin: 25px 0;
+  margin: 25px 0;
 }
 
 .sidebar-nav-avatar {
-	margin-top: auto;
+  margin-top: auto;
 }
 
 .content-nav {
-	height: 50px;
-	width: 1150px;
-	margin-top: 20px;
-	display: inline-flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+  height: 50px;
+  width: 1150px;
+  margin-top: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .content-nav-plus {
-	margin-right: auto;
-	margin-left: 20px;
+  margin-right: auto;
+  margin-left: 20px;
 }
 
 .content-nav-icon {
-	margin: 0 20px;
+  margin: 0 20px;
 }
 
 .note {
-	margin: 1px 1px;
-	position: relative;
-	top: 85px;
-	width: 1060px;
-	height: 470px;
+  margin: 1px 1px;
+  position: relative;
+  top: 85px;
+  width: 1060px;
+  height: 470px;
 }
 
 .backgroundtext {
-	margin: 1px 1px;
-	font-size: 96px;
-	letter-spacing: 15px;
-	color: #E3E5E6;
-	width: 1060px;
-	position: relative;
-	left: 25px;
-	z-index: 0;
+  margin: 1px 1px;
+  font-size: 96px;
+  letter-spacing: 15px;
+  color: #E3E5E6;
+  width: 1060px;
+  position: relative;
+  left: 25px;
+  z-index: 0;
 }
 
 .note-text {
-	margin: 1px 1px;
-	font-size: 36px;
-	letter-spacing: 5px;
-	position: relative;
-	left: 100px;
-	top: -115px;
+  margin: 1px 1px;
+  font-size: 36px;
+  letter-spacing: 5px;
+  position: relative;
+  left: 100px;
+  top: -115px;
 }
 
 .note-number {
-	margin: 1px 1px;
-	font-size: 14px;
-	color: #E3E5E6;
-	position: relative;
-	right: 0px;
-	top: -145px;
-	text-align: right;
+  margin: 1px 1px;
+  font-size: 14px;
+  color: #E3E5E6;
+  position: relative;
+  right: 0px;
+  top: -145px;
+  text-align: right;
 }
 
 .note-list {
-	background: #ffffff;
-	width: 970px;
-	height: 60px;
-	margin: 0px;
-	padding: 0px;
-	position: relative;
-	left: 85px;
-	top: -125px;
-	box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); /*阴影*/
-	border-bottom: 2px solid #EDEEEF; /*2px 的横线*/
-	display: flex;
-	align-items: center;
+  background: #ffffff;
+  width: 970px;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  left: 85px;
+  top: -125px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); /*阴影*/
+  border-bottom: 2px solid #EDEEEF; /*2px 的横线*/
+  display: flex;
+  align-items: center;
 }
 
 .note-list-icon {
-	width: 50px;
-	height: 55px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  width: 50px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .note-list-border {
-	margin: 1px 1px;
-	width: 68px
+  margin: 1px 1px;
+  width: 68px
 }
 
 .note-list-border-red {
-	margin: 4px 4px;
-	border-radius: 8px;
-	background: #E95E51;
-	width: 53px;
-	height: 18px;
-	text-align: center;
-	font-size: 12px;
-	color: #ffffff;
+  margin: 4px 4px;
+  border-radius: 8px;
+  background: #E95E51;
+  width: 53px;
+  height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
 }
 
 .note-list-border-green {
-	margin: 4px 4px;
-	border-radius: 8px;
-	background: #0EBB82;
-	width: 53px;
-	height: 18px;
-	text-align: center;
-	font-size: 12px;
-	color: #ffffff;
+  margin: 4px 4px;
+  border-radius: 8px;
+  background: #0EBB82;
+  width: 53px;
+  height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
 }
 
 .note-list-border-blue {
-	margin: 4px 4px;
-	border-radius: 8px;
-	background: #486EE3;
-	width: 53px;
-	height: 18px;
-	text-align: center;
-	font-size: 12px;
-	color: #ffffff;
+  margin: 4px 4px;
+  border-radius: 8px;
+  background: #486EE3;
+  width: 53px;
+  height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
 }
 
 .note-list-border-grey {
-	margin: 4px 4px;
-	border-radius: 8px;
-	background: #7F8186;
-	width: 68px;
-	height: 18px;
-	text-align: center;
-	font-size: 12px;
-	color: #ffffff;
+  margin: 4px 4px;
+  border-radius: 8px;
+  background: #7F8186;
+  width: 68px;
+  height: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #ffffff;
 }
 
 .note-list-text {
-	text-align: center;
-	margin-right: auto;
+  text-align: center;
+  margin-right: auto;
 }
 
 .note-list-clock {
-	height: 25px;
-	width: 145px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  height: 25px;
+  width: 145px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .note-list-clocktime {
-	width: 120px;
-	text-align: left;
+  width: 120px;
+  text-align: left;
 }
