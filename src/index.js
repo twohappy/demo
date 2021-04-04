@@ -58,6 +58,7 @@ function Item() {
     [
       {
         lable: [{
+                  id: 1,
                   text: "Hight",
                   color: "red",
                 }],
@@ -67,6 +68,7 @@ function Item() {
       },
       {
         lable: [{
+                  id: 2,
                   text: "Medium",
                   color: "grey"
                 },
@@ -88,9 +90,8 @@ function Item() {
           <img src={Tick} />
         </div>
           {item.lable.map((item) =>
-            <div className="note-list-border">
-              {/* 这个地方，要根据返回的 lable.color 更改 classname，后续再改 */}
-              <button className={"note-list-border-red"}>
+            <div className="note-list-border" key={item.id}>
+              <button className={["note-list-border-"+item.color]}>
                 <div className="note-list-text">
                   {item.text}
                 </div>
