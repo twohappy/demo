@@ -14,7 +14,7 @@ import Tick from './assets/content/tick.png';
 import Point from './assets/content/point.png';
 
 function Notebook() {
-  const [mapItem] = useState(
+  let [mapItem] = useState(
     [
       { 
         id: 1,
@@ -74,7 +74,7 @@ function Notebook() {
 }
 
 function Item(props) {
-  const { mapItem } = props;
+  let { mapItem } = props;
 
   return (
     <div>
