@@ -82,13 +82,20 @@ function Notebook() {
           <p className="backgroundtext">TODAY</p>
           <p className="note-text">TODAY</p>
           <p className="note-number">6 Tasks</p>
-          <Item  
-            mapItem={mapItem}
-            alertisActive={alertisActive}
-            handleAlertisActive={handleAlertisActive}
-            dialogisActive={dialogisActive}
-            handleDialogClick={handleDialogClick}
-          />
+          {
+            mapItem.map(item =>(
+              <Item
+                item={item}
+                mapItem={mapItem}
+                alertisActive={alertisActive}
+                handleAlertisActive={handleAlertisActive}
+                dialogisActive={dialogisActive}
+                handleDialogClick={handleDialogClick}
+              />
+              )
+            )
+          }
+
         </div>
         <div style={{display: dialogisActive ? "block" : "none"}}>
           < Dialog
@@ -111,7 +118,7 @@ function Notebook() {
 }
 
 function Item(props) {
-  let { mapItem, alertisActive, handleAlertisActive, dialogisActive, handleDialogClick } = props;
+  let { item, mapItem, alertisActive, handleAlertisActive, dialogisActive, handleDialogClick } = props;
   let isDrop;
   let [isActive, handleClick] = useState(false);
 
@@ -126,7 +133,7 @@ function Item(props) {
 
   return (
     <div>
-    {mapItem.map((item) => (
+    {/*{mapItem.map((item) => (*/}
       <div className="note-list" key={item.id}>
         <div className="note-list-icon">
           <img alt="Tick" src={Tick} />
@@ -156,7 +163,7 @@ function Item(props) {
           {isDrop}
         </div>
       </div>
-    ))}
+    // ))}
     </div>
   );
 }
